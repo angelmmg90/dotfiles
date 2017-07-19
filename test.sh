@@ -4,6 +4,7 @@ set -o pipefail
 
 ERRORS=()
 
+# test
 # find all executables and run `shellcheck`
 for f in $(find . -type f -not -iwholename '*.git*' -not -name "yubitouch.sh" | sort -u); do
 	if file "$f" | grep --quiet shell; then
